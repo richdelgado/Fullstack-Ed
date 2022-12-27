@@ -7,6 +7,7 @@
         <title>Github</title>
     </head>
     <body>
+        <a href="https://platzi.com/clases/1557-git-github/19942-uso-de-github/" target="_blank">LINK A LA CLASE</a>
         <p>Es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecturar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos)</p>
         <p>Nota: Git es tu repositorio local (En tu computadora) y Gitgub es en un servidor remoto (Idealmente para trabajo en equipo) y la relacion entre ambos es indispensable para ejecutar proyectos de desarrollo</p>
         <p>Al crear un repositorio en Github se puede añadir un archivo README.me (es una buena practica) y sirve para describir el proyecto, los requerimientos y las instrucciones que debmos seguir para contribuir correctamente</p>
@@ -26,5 +27,17 @@
             <li type="disc">Para validar los cambios podemos ingresar el comando "git remote" y debemos ver origin, tambien podemos usar el comando "git remote -v" y debemos ver valores de fetch (traer) y push (enviar)</li>
             <li type="disc">Finalmente ingresamos el comando "git push origin master"</li>
         </ul>
+        <h3>Si como resultado arroja el siguiente error: 
+            "Updates were rejected because the remote contains work that you do
+            hint: not have locally. This is usually caused by another repository pushing
+            hint: to the same ref. You may want to first integrate the remote changes
+            hint: (e.g., 'git pull ...') before pushing again.
+            hint: See the 'Note about fast-forwards' in 'git push --help' for details." Esto se debe a que hay que integrar los cambios remotos antes de hacer un Push (no sabe que paso en el mundo remoto). Puedes seguir estos pasos:</h3>
+        <ul>
+            <li type="disc">Ir a la terminar e ingresar el comando "git pull origin + nombre de la branch" para traer los cambios al repositorio local</li>
+            <li>Posteriormente ingresamos el comando "git pull origin + nombre de la branch" y de esta forma todo se pasa a Github</li>
+        
+        </ul>
+            
     </body>
     </html>
